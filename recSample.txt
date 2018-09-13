@@ -1,0 +1,22 @@
+String ss;
+void call()	{//don't remove
+	try	{
+		ss = "hi man";
+		rec(5);
+	}catch(Exception e)	{
+		System.out.println("exception hoise");
+		terminatePlease();
+	}
+	
+}//don't remove
+
+void rec(int n) throws Exception	{
+	if(cntOfpathOfRecursion == pathLimit)throw new Exception();int pastCnt = firstLine();//don't remove
+	state(ss, n, pastCnt);//don't remove and use this to print anything
+	if((n == 0) || (n == 1) || (n == 2))	{
+		return;
+	}
+	rec(n - 1);rec(n - 2);rec(n - 3);
+	lastLine(pastCnt);//don't remove
+	return;
+}

@@ -1,0 +1,21 @@
+1. call() function should be available in user's code from where recursive function would get called.
+
+2. Function name of recursive function can be anything, return type can be anything, state value  can be anything, number of state can be anything.
+
+3. if(cntOfpathOfRecursion == pathLimit)throw new Exception();int pastCnt = firstLine(); should be added before all recusrsion call in recursion body.
+
+4. lastLine(pastCnt); should be added after all recusrsion call in recursion body.
+
+5. Any recursive call should be made between lines described in point 3 and 4.
+
+6. If user want to print or show anything in state, he/she has to write it in state() function. state can take upto 7 paremetres. But last paremeter should always take pastCnt arguement;
+
+7. Only one recursive function can be simulated, otherwise user can write his own recursion but lines described in point 3 and 4 should only be added to that recursive function which is going to be simulated.
+
+8. Code should be in java.
+
+9. code generating more than 1000 states is not accepted.
+
+10. Otherwise, you can write anything, declare anything(maybe except variables I used or keywords) and call anything.
+
+Thank You.
